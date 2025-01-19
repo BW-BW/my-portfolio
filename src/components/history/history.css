@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Full viewport height */
+    background: linear-gradient(135deg, #a52222, #e0e0e0);
+    /* Subtle gradient */
+    /* padding: 20px; */
+}

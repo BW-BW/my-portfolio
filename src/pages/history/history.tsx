@@ -4,60 +4,110 @@ import {
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import assets from '../../assets/assets';
+import './history.css';
 
 export const HistoryTimeline: React.FC = () => {
     return (
-        <section className="home">
+        <section className="background">
             <VerticalTimeline>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#2196f3', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid #2196f3' }}
                     date="Nov 2020 - July 2021"
-                    iconStyle={{ background: '#2196f3', color: '#fff' }}
+                    icon={<div className="timeline-icon">
+                        <img src={assets.university} />
+                    </div>}
+                    textClassName="vertical-timeline-box"
                 >
-                    <h3 className="vertical-timeline-element-title">Started University</h3>
+                    <h1>Started University</h1>
                     <p>First time dipping my toes in the tech world.</p>
-                    <p>Python, Sql, C#</p>
-                    <p>First Hackathon - python</p>
+                    <p>Learned python, and made a sport center management system.</p>
+                    <p>Next up was SQL, where i make DB system for airlines.</p>
+                    <p>Last lesson was C# where i learned the concept of OOP.</p>
+                    <div className='vertical-timeline-box-image'>
+                        <img className="text-icon" src={assets.python} />
+                        <img className="text-icon" src={assets.cSharp} />
+                        <img className="text-icon" src={assets.sql} />
+                    </div>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
                     date="Sept 2021 - June 2022"
-                    iconStyle={{ background: '#f44336', color: '#fff' }}
+                    icon={<div className="timeline-icon">
+                        <img src={assets.university} />
+                    </div>}
+                    textClassName="vertical-timeline-box"
                 >
-                    <h3 className="vertical-timeline-element-title">Second Year of University</h3>
-                    <p>Java, R, Kotlin, C++.</p>
+                    <h1>Second Year of University</h1>
+                    <p></p>
+                    <p>Further learned OOP concept with using Java. Made a desktop app.</p>
+                    <p>Went into mobile development. Built a mobile app using Kotlin.</p>
+                    <p>Dived into data structure basic concepts using C++.</p>
+                    <div className='vertical-timeline-box-image'>
+                        <img className="text-icon" src={assets.java} />
+                        <img className="text-icon" src={assets.cpp} />
+                        <img className="text-icon" src={assets.kotlin} />
+                    </div>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
                     date="Aug 2022 - Nov 2022"
-                    iconStyle={{ background: '#f44336', color: '#fff' }}
+                    icon={<div className="timeline-icon">
+                        <img src={assets.work} />
+                    </div>}
+                    textClassName="vertical-timeline-box"
                 >
-                    <h3 className="vertical-timeline-element-title">Internship</h3>
-                    <p>PHP Lens.</p>
+                    <h1>Internship at Juris Tech</h1>
+                    <p>Used PHP Lens, a framework for fullstack by php, html, css, and js.</p>
+                    <p>Deepen my knowledge of SQL by learning PL/SQL in database.</p>
+                    <p>First time learning about GIT version control.</p>
+                    <div className='vertical-timeline-box-image'>
+                        <img className="text-icon" src={assets.php} />
+                        <img className="text-icon" src={assets.oracle} />
+                        <img className="text-icon" src={assets.plsql} />
+                        <img className="text-icon" src={assets.git} />
+                    </div>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
                     date="Dec 2022 - Aug 2023"
-                    iconStyle={{ background: '#f44336', color: '#fff' }}
+                    icon={<div className="timeline-icon">
+                        <img src={assets.university} />
+                    </div>}
+                    textClassName="vertical-timeline-box"
                 >
-                    <h3 className="vertical-timeline-element-title">Third Year of University</h3>
-                    <p>ASP MVC, Blockchain, Flutter</p>
+                    <h1>Third Year of University</h1>
+                    <p>Plunged into ASP C# with MVC concepts.</p>
+                    <p>Initial exposure to AWS cloud services.</p>
+                    <p>Picked up blockchain development concepts using Java.</p>
+                    <p>Created food scanner mobile app using Flutter and Supabase.</p>
+                    <div className='vertical-timeline-box-image'>
+                        <img className="text-icon" src={assets.aspmvc} />
+                        <img className="text-icon" src={assets.aws} />
+                        <img className="text-icon" src={assets.blockchain} />
+                        <img className="text-icon" src={assets.flutter} />
+                        <img className="text-icon" src={assets.supabase} />
+                    </div>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
                     date="Dec 2023 - Now"
-                    iconStyle={{ background: '#f44336', color: '#fff' }}
+                    icon={<div className="timeline-icon">
+                        <img src={assets.work} />
+                    </div>}
+                    textClassName="vertical-timeline-box"
                 >
-                    <h3 className="vertical-timeline-element-title">Agmo Studio</h3>
-                    <p>OutSystems, C# ASP.NET, Nest.js</p>
+                    <h1>Backend Developer at Agmo Studio</h1>
+                    <p>Lowcode OutSystems certified developer.</p>
+                    <p>C# ASP.NET backend REST API developer.</p>
+                    <p>Nest.js (typescript) backend REST API developer.</p>
+                    <div className='vertical-timeline-box-image'>
+                        <img className="text-icon" src={assets.asp} />
+                        <img className="text-icon" src={assets.outsystems} />
+                        <img className="text-icon" src={assets.nestjs} />
+                        <img className="text-icon" src={assets.docker} />
+                        <img className="text-icon" src={assets.kubernetes} />
+                    </div>
                 </VerticalTimelineElement>
-
 
             </VerticalTimeline>
         </section>

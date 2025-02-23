@@ -1,4 +1,5 @@
 const assets = {
+    //png assets
     university: require('./png/university.png'),
     work: require('./png/work.png'),
     cSharp: require('./png/c-sharp.png'),
@@ -22,6 +23,8 @@ const assets = {
     nestjs: require('./png/nestjs.png'),
     outsystems: require('./png/outsystems.png'),
 
+    //gif assets
+    construction: require('./gif/construction.gif'),
 };
 
 export default assets;

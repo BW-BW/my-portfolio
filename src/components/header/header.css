@@ -1,16 +1,40 @@
-/* Header.css */
 .header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     background-color: #523d35;
+    width: 100%;
+    overflow: hidden;
+    /* Prevents horizontal scroll */
 }
 
 .header-nav {
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    /* Allows links to move to the next row if needed */
+    justify-content: center;
+    gap: 5rem;
+    /* Adjusted for better spacing */
+    max-width: 90%;
+    text-align: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    /* Align icon and text properly */
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.header-icon {
+    width: 30px;
+    /* Fixed width for consistency */
+    height: 30px;
+    /* Fixed height for consistency */
+    object-fit: contain;
+    border-radius: 10%;
 }
 
 .nav-link {
@@ -18,9 +42,22 @@
     font-size: 1rem;
     color: #efefe9;
     transition: color 0.3s ease;
+    white-space: nowrap;
+    /* Prevents text wrapping */
 }
 
 .nav-link:hover {
     color: #0056b3;
-    /* Darker blue on hover */
+}
+
+/* 🔹 Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+    .header-nav {
+        gap: 2rem;
+    }
+
+    /* 🔹 Hide text on smaller screens */
+    .nav-link {
+        display: none;
+    }
 }

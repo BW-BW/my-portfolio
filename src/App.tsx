@@ -14,9 +14,6 @@ const App: React.FC = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/history" element={<HistoryTimeline />} />
       </Routes>
-      {/* <footer>
-        <p>© 2025 My Portfolio</p>
-      </footer> */}
     </Router>
   );
 };

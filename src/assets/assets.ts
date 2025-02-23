@@ -22,6 +22,10 @@ const assets = {
     kubernetes: require('./png/kubernetes.png'),
     nestjs: require('./png/nestjs.png'),
     outsystems: require('./png/outsystems.png'),
+    home: require('./png/home.png'),
+    project: require('./png/project.png'),
+    history: require('./png/history.png'),
+    contact: require('./png/contact.png'),
 
     //gif assets
     construction: require('./gif/construction.gif'),

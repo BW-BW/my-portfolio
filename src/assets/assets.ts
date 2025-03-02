@@ -40,6 +40,11 @@ const assets = {
     portfolio: require('./projects/portfolio.png'),
     powerbee: require('./projects/powerbee.png'),
     tomi: require('./projects/tomi.png'),
+
+    //contacts assets
+    brian1: require('./contacts/brian1.jpg'),
+    brian2: require('./contacts/brian2.jpg'),
+    brian3: require('./contacts/brian3.jpg'),
 };
 
 export default assets;

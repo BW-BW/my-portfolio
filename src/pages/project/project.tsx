@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
 import assets from '../../assets/assets';
-import ProjectItem from "./projectItem";
+import ProjectItem from "../../components/projects/projectItem";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

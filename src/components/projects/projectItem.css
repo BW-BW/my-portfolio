@@ -1,11 +1,3 @@
-.background {
-    justify-content: center;
-    align-items: center;
-    background: #bba58f;
-    /* Ensure it doesn't exceed viewport width */
-    overflow-x: hidden;
-}
-
 .container {
     display: flex;
     max-width: 1200px;
@@ -20,7 +12,6 @@
     margin: 5% auto;
     /* Centers the container */
 }
-
 
 .text-section {
     flex: 40%;

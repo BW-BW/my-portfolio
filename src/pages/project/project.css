@@ -1,0 +1,7 @@
+.background {
+    justify-content: center;
+    align-items: center;
+    background: #bba58f;
+    /* Ensure it doesn't exceed viewport width */
+    overflow-x: hidden;
+}

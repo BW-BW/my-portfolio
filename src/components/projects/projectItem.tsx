@@ -1,5 +1,5 @@
 import React from "react";
-import "./project.css";
+import "./projectItem.css";
 
 interface ProjectButton {
     label: string;

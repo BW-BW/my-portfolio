@@ -2,6 +2,8 @@
     justify-content: center;
     align-items: center;
     background: #bba58f;
+    /* Ensure it doesn't exceed viewport width */
+    overflow-x: hidden;
 }
 
 .container {
@@ -84,6 +86,7 @@
     .container {
         display: grid;
         text-align: center;
+        padding: 15px;
     }
 
     .image-section {
@@ -91,10 +94,6 @@
         justify-content: center;
         margin-top: 10px;
         padding-right: 0px;
-    }
-
-    .text-section p {
-        padding: 0 20px;
     }
 
     .button-container {

@@ -29,6 +29,17 @@ const assets = {
 
     //gif assets
     construction: require('./gif/construction.gif'),
+
+    //projects assets
+    ggcard: require('./projects/ggcard.png'),
+    barcodeScanner: require('./projects/barcode-scanner.png'),
+    summarizer: require('./projects/summarizer.png'),
+    blockchainRealEstate: require('./projects/blockchain.png'),
+    movieRecs: require('./projects/MovieRecs.png'),
+    bridgeXchange: require('./projects/BridgeXchange.png'),
+    portfolio: require('./projects/portfolio.png'),
+    powerbee: require('./projects/powerbee.png'),
+    tomi: require('./projects/tomi.png'),
 };
 
 export default assets;

@@ -1,26 +1,58 @@
-import React, { useEffect }  from 'react';
+import React, { useEffect, useState }  from 'react';
 import './contact.css';
 import assets from '../../assets/assets';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const Contact: React.FC = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
     useEffect(() => {
-            AOS.init({ duration: 1000, once: true });
-        }, []);
+        AOS.init({ duration: 1000, once: true });
+
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const sliderSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
 
     return (
         <section className="contact">
-            <div className="contact-container" data-aos="fade up">
+            <div className="contact-container" data-aos="fade-up">
                 <h2>Hello there 👋</h2>
                 <h1>I'm <span style={{ color: "#523d35", fontWeight: "bold" }}>Brian Widjaja</span></h1>
                 <h2>Software Developer in Agmo Studio</h2>
             </div>
 
-            <div className="image-container" data-aos="fade up">
-                <img src={assets.brian1} className="image-item" />
-                <img src={assets.brian2} className="image-item" />
-                <img src={assets.brian3} className="image-item" />
+            <div className="image-container" data-aos="fade-up">
+                {isMobile ? (
+                    <div className="slider-wrapper">
+                        <Slider {...sliderSettings}>
+                            <div><img src={assets.brian1} className="image-item" /></div>
+                            <div><img src={assets.brian2} className="image-item" /></div>
+                            <div><img src={assets.brian3} className="image-item" /></div>
+                        </Slider>
+                    </div>
+                ) : (
+                    <div className="grid-layout">
+                        <img src={assets.brian1} className="image-item" />
+                        <img src={assets.brian2} className="image-item" />
+                        <img src={assets.brian3} className="image-item" />
+                    </div>
+                )}
             </div>
 
             <div className="contact-container">
@@ -42,7 +74,7 @@ const Contact: React.FC = () => {
             <div className="contact-info">
                 <h2>Want to know more? Contact me at:</h2>
                 
-                <div className="social-links">
+                <div className="social-links" data-aos="fade-up">
                     <a href="mailto:brianwidjaja53@gmail.com" target="_blank" rel="noopener noreferrer">
                         📧 brianwidjaja53@gmail.com
                     </a>
@@ -55,7 +87,7 @@ const Contact: React.FC = () => {
                     </a>
                 </div>
 
-                <div className="social-links">
+                <div className="social-links" data-aos="fade-up">
                     <a href="https://wa.me/6282280011371" target="_blank" rel="noopener noreferrer"> 
                         📱 WhatsApp <img src="https://flagcdn.com/w40/id.png" alt="Indonesia Flag" width="20" />
                     </a>
@@ -64,7 +96,7 @@ const Contact: React.FC = () => {
                     </a>
                 </div>
 
-                <button className="resume-btn" onClick={() => window.open('/documents/resume.pdf', '_blank')}>
+                <button className="resume-btn"  data-aos="fade-up" onClick={() => window.open('/documents/resume.pdf', '_blank')}>
                     📄 Download Resume
                 </button>
             </div>

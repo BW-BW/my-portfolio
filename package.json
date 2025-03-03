@@ -11,7 +11,9 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
     "react-vertical-timeline-component": "^3.5.3",
+    "slick-carousel": "^1.8.1",
     "typescript": "^5.7.3"
   },
   "scripts": {
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
+    "@types/react-slick": "^0.23.13",
     "@types/react-vertical-timeline-component": "^3.3.6"
   }
 }

@@ -3,6 +3,7 @@
     align-items: center;
     min-height: 100vh;
     background: #bba58f;
+    overflow-x: hidden;
 }
 
 .contact-container {
@@ -48,27 +49,20 @@
     justify-content: center;
     /* Center the images */
     gap: 20px;
-    /* Adds spacing between images */
     flex-wrap: wrap;
-    /* Allows wrapping on smaller screens */
     max-width: 1200px;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     margin: auto;
 }
 
-/* 🔹 IMAGE STYLING */
 .image-item {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    /* Makes the images circular */
     object-fit: cover;
-    /* Ensures images maintain aspect ratio */
     border: 5px solid #fff;
-    /* Optional: Adds a white border */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds a soft shadow */
 }
 
 .contact-info {
@@ -124,6 +118,27 @@
     transform: scale(1.05);
 }
 
+/* Ensure images display correctly */
+.slick-slider {
+    width: 90%;
+    max-width: 350px; /* Adjust as needed */
+    margin: auto;
+}
+
+/* Ensure images do not disappear */
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.grid-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 @media (max-width: 768px) {
     .contact-container h1 {
@@ -144,11 +159,16 @@
         padding-top: 5px;
     }
 
-    /* 🔹 IMAGE STYLING */
     .image-item {
         width: 300px;
         height: 300px;
         border-radius: 10%;
         border: 2px solid #fff;
+    }
+
+    .slider-wrapper {
+        width: 100%;
+        max-width: 350px; /* Set a max width */
+        margin: auto;
     }
 }

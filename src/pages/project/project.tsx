@@ -10,7 +10,7 @@ const projects = [
     {
         title: "EV Car Charger",
         description: [
-            "Backend REST APIs for EV cars to charge their car, built with NestJS framework (nodeJs), integrated with microservices and third party service for payment",
+            "Backend REST APIs for EV cars to charge their car, built with NestJS framework (nodeJs), integrated with microservices and third party service for payment.",
             "The first project where i act as the PIC of the backend system. This app is a one stop solution for EV car owners for easily charge their car and serve as database to lookup all nearby charging stations."
         ],
         image: assets.powerbee,
@@ -97,7 +97,7 @@ const projects = [
             },
             {
                 label: "Source Code",
-                link: "https://github.com/BW-BW/BridgeXchange"
+                link: "https://github.com/BW-BW/my-portfolio"
             }
         ]
     },
@@ -115,7 +115,7 @@ const projects = [
             },
             {
                 label: "Source Code",
-                link: "https://github.com/BW-BW/StudentSummarizer"
+                link: "https://github.com/BW-BW/RealEstateBCD"
             },
         ]
     },

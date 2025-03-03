@@ -85,7 +85,6 @@ export const HistoryTimeline: React.FC = () => {
                         <img className="text-icon" src={assets.aws} />
                         <img className="text-icon" src={assets.blockchain} />
                         <img className="text-icon" src={assets.flutter} />
-                        <img className="text-icon" src={assets.supabase} />
                     </div>
                 </VerticalTimelineElement>
 
@@ -105,7 +104,6 @@ export const HistoryTimeline: React.FC = () => {
                         <img className="text-icon" src={assets.outsystems} />
                         <img className="text-icon" src={assets.nestjs} />
                         <img className="text-icon" src={assets.docker} />
-                        <img className="text-icon" src={assets.kubernetes} />
                     </div>
                 </VerticalTimelineElement>
 

@@ -1,9 +1,9 @@
-import React, { useEffect, useState }  from 'react';
+import React, { useEffect, useState } from 'react';
 import './contact.css';
 import assets from '../../assets/assets';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
@@ -67,18 +67,18 @@ const Contact: React.FC = () => {
                     I thrive in problem-solving, whether it's refining JWT authentication logic, handling complex database seeding, or debugging tricky logic function issues.
                 </p>
                 <p data-aos="fade up">
-                    Lately, I've been exploring ways to expand my learning curve, seeking opportunities that push me toward new challenges and innovations. 
+                    Lately, I've been exploring ways to expand my learning curve, seeking opportunities that push me toward new challenges and innovations.
                 </p>
             </div>
 
             <div className="contact-info">
                 <h2>Want to know more? Contact me at:</h2>
-                
+
                 <div className="social-links" data-aos="fade-up">
                     <a href="mailto:brianwidjaja53@gmail.com" target="_blank" rel="noopener noreferrer">
                         📧 brianwidjaja53@gmail.com
                     </a>
-                    
+
                     <a href="https://www.linkedin.com/in/brian-widjaja" target="_blank" rel="noopener noreferrer">
                         🔗 LinkedIn
                     </a>
@@ -88,17 +88,27 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="social-links" data-aos="fade-up">
-                    <a href="https://wa.me/6282280011371" target="_blank" rel="noopener noreferrer"> 
+                    <a href="https://wa.me/6282280011371" target="_blank" rel="noopener noreferrer">
                         📱 WhatsApp <img src="https://flagcdn.com/w40/id.png" alt="Indonesia Flag" width="20" />
                     </a>
-                    <a href="https://wa.me/60146120744" target="_blank" rel="noopener noreferrer"> 
+                    <a href="https://wa.me/60146120744" target="_blank" rel="noopener noreferrer">
                         📱 WhatsApp <img src="https://flagcdn.com/w40/my.png" alt="Malaysia Flag" width="20" />
                     </a>
                 </div>
 
-                <button className="resume-btn"  data-aos="fade-up" onClick={() => window.open('/documents/resume.pdf', '_blank')}>
+                <button
+                    className="resume-btn"
+                    data-aos="fade-up"
+                    onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/documents/resume.pdf';
+                        link.download = 'resume.pdf';  // Optional: specify a custom filename for the download
+                        link.click();
+                    }}
+                >
                     📄 Download Resume
                 </button>
+
             </div>
         </section>
     );

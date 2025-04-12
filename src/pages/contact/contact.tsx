@@ -101,9 +101,11 @@ const Contact: React.FC = () => {
                     data-aos="fade-up"
                     onClick={() => {
                         const link = document.createElement('a');
-                        link.href = '/documents/resume.pdf';
-                        link.download = 'resume.pdf';  // Optional: specify a custom filename for the download
+                        link.href = '/documents/Resume.pdf';
+                        link.download = 'Resume.pdf';  // Optional: specify a custom filename for the download
+                        document.body.appendChild(link);
                         link.click();
+                        document.body.removeChild(link);
                     }}
                 >
                     📄 Download Resume
